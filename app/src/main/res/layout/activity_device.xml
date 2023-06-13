@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DeviceActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:text="Подключенное устройство" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Данные">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_text"
+                        android:text="open:1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/send_command"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="16dp"
+                    android:text="Отправить"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/door_1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Дверь 1"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/door_2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Дверь 2"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/door_3"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Дверь 3"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/door_4"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Дверь 4"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/door_5"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Дверь 5"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/door_6"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Дверь 6"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/door_7"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Дверь 7"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/door_8"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Дверь 8"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/door_9"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Дверь 9"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/door_10"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Дверь 10"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
